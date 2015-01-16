@@ -94,7 +94,8 @@ app.use(function (req, res, next) {
 });
 
 
-var node_port = process.env.NODE_PORT || '8080';
+// var node_port = process.env.NODE_PORT || '8080';
+var node_port = process.env.PORT || '8080';
 node_port = parseInt(node_port);
 
 console.log("Starting server, listening on " + node_port);
